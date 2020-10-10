@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    text-align: center;
+    background-color: #0F0F1B;
+    color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    max-width: 850px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0;
+}
+
+.card {
+    text-align: left;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: #171727;
+    transition: 400ms;
+    position: relative;
+    width: 165px;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: #242486;
+    transform: scale(1.05);
+}
+
+.card.best-price::before {
+    content: 'Best Price';
+    position: absolute;
+    text-align: center;
+    background: #74A287;
+    color: #171727;
+    font-size: 16px;
+    border-radius: 15px;
+    height: 22px;
+    left: 22.27%;
+    right: 22.27%;
+    top: -13px;
+    padding: 4px 19px;
+    transition: 400ms;
+}
+
+.card.best-price:hover::before {
+    background-color: #A0E0B2;
+}
+
+span.instead {
+    margin-top: -40px;
+    font-size: 16px;
+}
+
+span.month {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h3,
+h4 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    transition: 400ms;
+    width: max-content;
+}
+
+a:hover {
+    border-color: #FFFFFF;
+}
+
+button {
+    transition: 400ms;
+    background-color: #0F0F1B;
+    color: #6161A7;
+    border: 1px solid #6161A7;
+    border-radius: 10px;
+    outline: 0;
+    padding: 16px 44px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6161A7;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 40px 0;
+        width: 80%;
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 44px 0;
+    }
+
+    .card {
+        margin: 20px 0;
+        width: 90%;
+    }
+
+}
