@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap');
+
+body {
+    background-color: #1B1B43;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    line-height: 22px;
+}
+
+.container {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    max-width: 541px;
+    padding: 17px 90px 50px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+    margin: 43px 0;
+}
+
+button {
+    color: #FFFFFF;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin: 17px 0;
+}
+
+button.google {
+    background-color: #5B86E6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    -webkit-box-shadow: 0px 10px 24px 0px rgba(92, 133, 230, 0.5);
+    -moz-box-shadow: 0px 10px 24px 0px rgba(92, 133, 230, 0.5);
+    box-shadow: 0px 10px 24px 0px rgba(92, 133, 230, 0.5);
+}
+
+button.google img {
+    height: 40px;
+    margin-right: 30px;
+}
+
+.or {
+    color: #949495;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 33px 0;
+}
+
+.or p {
+    text-transform: uppercase;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.or hr {
+    border-style: solid;
+    width: 55px;
+}
+
+.get-started {
+    background-color: #E65B7C;
+    padding: 15px 0;
+    -webkit-box-shadow: 0px 10px 24px 0px rgba(230, 91, 124, 1);
+    -moz-box-shadow: 0px 10px 24px 0px rgba(230, 91, 124, 1);
+    box-shadow: 0px 10px 24px 0px rgba(230, 91, 124, 1);
+}
+
+p.registered {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #5B86E6;
+}
+
+.form-group {
+    text-align: left;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D9DCED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+}
+
+@media(max-width: 768px) {
+    .container{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
