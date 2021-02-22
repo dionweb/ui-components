@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+   background-color: #EBEBFB;
+   font-family: 'IBM Plex Sans', sans-serif;
+   min-height: 100vh;
+   min-width: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+}
+
+.content {
+   max-width: 400px;
+   background: #FFFFFF;
+   box-shadow: 0px 49px 46px -20px rgba(1, 27, 162, 0.121099);
+   border-radius: 15px;
+   text-align: center;
+   padding: 94px 124px;
+}
+
+h2 {
+   font-weight: 700;
+   font-size: 22px;
+   margin: 0;
+}
+
+p {
+   font-size: 18px;
+   margin: 30px 0 53px 0;
+}
+
+.checkboxes {
+   margin: 38px 0 18px 0;
+   display: flex;
+   text-align: left;
+
+}
+
+.checkboxes .left {
+   margin-right: 20px;
+}
+
+.checkboxes .right {
+   margin-right: 20px;
+}
+
+.checkboxes .left div,
+.checkboxes .right div {
+   margin-bottom: 20px;
+}
+
+.checkboxes label {
+   font-size: 16px;
+   font-weight: 400;
+   cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"] {
+   display: none;
+}
+
+.checkboxes input[type="checkbox"]+label::before {
+   width: 21px;
+   height: 21px;
+   border-radius: 3px;
+   border: 2px solid #C9CDE7;
+   background-color: #fff;
+   display: block;
+   content: "";
+   float: left;
+   margin-right: 7px;
+}
+
+.checkboxes input[type="checkbox"]:checked+label::before {
+   background-color: #6C6AFF;
+   border: 2px solid #6C6AFF;
+   content: '\2713';
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.radio {
+   margin: 42px 0 47px 0;
+   float: left;
+}
+
+.radio h5 {
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: left;
+   color: #191B44;
+   margin: 0 0 11px 0;
+}
+
+
+.radio .box {
+   width: 112px;
+   height: 112px;
+   margin-right: 10px;
+   display: inline-block;
+}
+
+.radio input[type="radio"] {
+   opacity: 0;
+   width: 0;
+   height: 0;
+   display: none;
+}
+
+.radio input[type="radio"]:active~label {
+   opacity: 1;
+}
+
+.radio input[type="radio"]:hover~label {
+   opacity: 1;
+   border: 2px solid #5F5FD8;
+}
+
+.radio input[type="radio"]:checked~label {
+   opacity: 1;
+   border: 2px solid #6C6AFF;
+}
+
+.radio label {
+   display: block;
+   padding: 14px 27px;
+   border-radius: 5px;
+   border: 2px solid #C9CDE7;
+   font-size: 16px;
+   cursor: pointer;
+   transition: 200ms;
+}
+
+.radio svg {
+   padding-top: 6px;
+   padding-bottom: 10px;
+   width: 30px;
+   height: 30px;
+   margin: auto;
+}
+
+.submit-button {
+   margin-top: 23px;
+   background: #6C6AFF;
+   border-radius: 10px;
+   border: 0;
+   outline: 0;
+   padding: 23px 0px;
+   width: 100%;
+   font-family: IBM Plex Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   color: #FFFFFF;
+   cursor: pointer;
+   transition: 400ms;
+}
+
+.submit-button:hover {
+   background-color: #5F5FD8;
+}
+
+@media only screen and (max-width: 760px) {
+   .content {
+      padding: 74px 94px;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .content {
+      padding: 54px 45px;
+   }
+}

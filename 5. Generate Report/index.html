@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Generate Report</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="content">
+         <h2>Generate a report for your website</h2>
+         <p>
+            Identify problems that affect your website’s performance,
+            accessibility and user experience.
+         </p>
+         <form action="">
+            <div class="checkboxes">
+               <div class="left">
+                  <div>
+                     <input
+                        type="checkbox"
+                        id="performace"
+                        name="performace"
+                        checked
+                     />
+                     <label for="performace">Performance</label>
+                  </div>
+
+                  <div>
+                     <input
+                        type="checkbox"
+                        id="bestpractices"
+                        name="bestpractices"
+                        checked
+                     />
+                     <label for="bestpractices">Best practices</label>
+                  </div>
+
+                  <div>
+                     <input
+                        type="checkbox"
+                        id="accessibility"
+                        name="accessibility"
+                        checked
+                     />
+                     <label for="accessibility">Accessibility</label>
+                  </div>
+               </div>
+               <div class="right">
+                  <div>
+                     <input type="checkbox" id="pwa" name="pwa" />
+                     <label for="pwa">Progressive Web App</label>
+                  </div>
+
+                  <div>
+                     <input
+                        type="checkbox"
+                        id="privacy"
+                        name="privacy"
+                        checked
+                     />
+                     <label for="privacy">Privacy</label>
+                  </div>
+
+                  <div>
+                     <input type="checkbox" id="seo" name="seo" checked />
+                     <label for="seo">SEO</label>
+                  </div>
+               </div>
+            </div>
+
+            <div class="radio">
+               <h5>Device</h5>
+               <div class="box">
+                  <input
+                     type="radio"
+                     name="device"
+                     id="mobile"
+                     value="mobile"
+                     checked
+                  />
+                  <label for="mobile">
+                     <svg
+                        width="20"
+                        height="30"
+                        viewBox="0 0 20 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <rect
+                           x="1.66663"
+                           y="1.66669"
+                           width="16.6667"
+                           height="26.6667"
+                           rx="1.66667"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M8.33337 3.33333H11.6667"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M9.99996 23.3334V23.35"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                     Mobile
+                  </label>
+               </div>
+               <div class="box">
+                  <input
+                     type="radio"
+                     name="device"
+                     id="desktop"
+                     value="Desktop"
+                  />
+                  <label for="desktop">
+                     <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <rect
+                           x="5"
+                           y="6.66669"
+                           width="30"
+                           height="20"
+                           rx="1.66667"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M11.6666 33.3333H28.3333"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M15 26.6667V33.3334"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M25 26.6667V33.3334"
+                           stroke="#191B44"
+                           stroke-width="2.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                     Desktop
+                  </label>
+               </div>
+            </div>
+            <input
+               class="submit-button"
+               type="submit"
+               value="Generate report"
+            />
+         </form>
+      </div>
+   </body>
+</html>
