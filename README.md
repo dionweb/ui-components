@@ -12,6 +12,8 @@
 
 [4. Testimonials](https://uidesigndaily.com/posts/sketch-testimonials-tesimonials-card-day-1172)
 
+[5. Generate Report](https://www.uidesigndaily.com/posts/sketch-generate-report-checkbox-settings-day-1282)
+
 ### License
 
 MIT License
